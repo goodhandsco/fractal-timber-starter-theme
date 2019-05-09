@@ -1,0 +1,7 @@
+context:
+  colors:
+    - title: Colors
+      values:
+        white: "#fff"
+        black: "#000"
+    

@@ -1,0 +1,25 @@
+{% if posts.pagination.pages is not empty %}
+    <section class="pagination py-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <nav class="pagination-block">
+                        <ul class="pagination">
+                            {% for page in pagination.pages %}
+                                {% if page.link %}
+                                    <li class="pr-3">
+                                        <a href="{{ page.link }}" class="{{ page.class }} text--black-tint-70 text--18">{{ page.title }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="current pr-3">
+                                        <span class="{{ page.class }} text--negative text--18">{{ page.title }}</span>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

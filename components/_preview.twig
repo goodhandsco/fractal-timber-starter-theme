@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-assets-base-url="../../" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link media="all" rel="stylesheet" href="{{ path ~ '/styles/main.css' }}">
+  <title>Preview Layout</title>
+</head>
+<body>
+<main class="site-content fractal-preview">
+  {{ yield | raw }}
+</main>
+<script src="{{ path ~ '/scripts/jquery-3.3.1.min.js' }}"></script>
+<script src="{{ path ~ '/scripts/flickity.pkgd.min.js' }}"></script>
+<script src="{{ path ~ '/scripts/jquery.sticky-kit.min.js' }}"></script>
+<script src="{{ path ~ '/scripts/aos.js' }}"></script>
+<script src="{{ path ~ '/scripts/main.js' }}"></script>
+</body>
+</html>
