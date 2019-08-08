@@ -1,25 +1,15 @@
 input {
-  color: var(--color-primary);
-  font-size: var(--input-size);
-  font-weight: var(--input-weight);
-  line-height: var(--input-line-height);
-  background-color: var(--input-background-color);
-  border: var(--input-border);
-  border-radius: var(--input-border-radius);
-  padding: var(--input-padding);
 
   @include onEvent {
-    border: var(--input-border-hover);
 
     outline: none;
 
     @include placeholder {
-      color: var(--color-primary);
+
     }
   }
 
   @include placeholder {
-    color: var(--color-accent);
-    text-transform: uppercase;
+
   }
 }

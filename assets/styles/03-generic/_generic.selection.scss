@@ -1,11 +1,11 @@
 ::selection {
-  color: var(--color-mark);
-  background: var(--color-accent);
+  color: $color-white;
+  background: $color-ips-black;
 }
 
 ::-moz-selection {
-  color: var(--color-mark);
-  background: var(--color-accent);
+  color: $color-white;
+  background: $color-ips-black;
 }
 
 * {

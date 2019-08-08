@@ -12,7 +12,7 @@ $five: 240px;
   $type: margin,
   $direction: all,
   $amount: $one,
-  $from: $bkp-tablet
+  $from: $tablet
 ) {
   @include mq($from: $from) {
     @if $type == padding {

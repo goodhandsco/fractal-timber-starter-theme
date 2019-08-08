@@ -1,14 +1,11 @@
 a {
-  color: var(--gray-2);
   text-decoration: none;
 
   @include basicTransition(all);
 
   &:visited {
-    color: var(--color-primary);
   }
 
   @include onEvent {
-    color: var(--color-accent);
   }
 }

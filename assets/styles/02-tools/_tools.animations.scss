@@ -6,9 +6,9 @@
   $properties: (
     all
   ),
-  $duration: var(--transition-duration),
+  $duration: $transition-duration,
   $delay: null,
-  $easing: var(--easing)
+  $easing: $easing
 ) {
   $value: null;
 
