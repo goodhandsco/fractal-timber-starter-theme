@@ -4,16 +4,10 @@
   "repository": "https://github.com/supernaut/fractal-webpack-boilerplate",
   "license": "MIT",
   "scripts": {
-    "stylelint": "stylelint assets/styles/**/*.scss --fix",
-    "stylelint-check": "stylelint-config-prettier-check",
-    "prettier": "prettier --write ./assets/scripts/**/*.js ./assets/styles/**/*.scss",
     "dev": "webpack --config webpack.dev.js --watch --progress --hide-modules",
     "webpack-build": "webpack --config webpack.prod.js --hide-modules",
     "fractal-build": "fractal build",
-    "prebuild": "npm run prettier",
-    "build": "npm run webpack-build && npm run fractal-build",
-    "ci-build": "webpack --config webpack.prod.js --env.ci=true --progress --hide-modules",
-    "precommit": "pretty-quick --staged"
+    "build": "npm run webpack-build && npm run fractal-build"
   },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
