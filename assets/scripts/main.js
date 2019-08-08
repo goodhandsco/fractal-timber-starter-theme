@@ -1,4 +1,4 @@
-import "../styles/main.scss";
+import "../styles/styles.scss";
 
 (function($) {
   var initializeBlock = function($block) {

@@ -1,5 +1,5 @@
 ---
-title: Insticator Styleguide
+title: APA Intemporal Styleguide
 ---
 
 This is a styleguide document for the new Insticator website and branding materials.

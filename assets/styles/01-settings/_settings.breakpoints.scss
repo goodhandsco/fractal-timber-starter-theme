@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #BREAKPOINTS-VARIABLES
+   ========================================================================== */
+
+$mobile: 320px;
+$phablet: 640px;
+$tablet: 768px;
+$laptop: 980px;
+$desktop: 1280px;
+$widescreen: 1920px;
+$two-k: 2400px;
+
+$breakpoints: (
+  mobile: $mobile,
+  phablet: $phablet,
+  tablet: $tablet,
+  laptop: $laptop,
+  desktop: $desktop,
+  widescreen: $widescreen,
+  two-k: $two-k
+);
+
+/**
+ * Breakpoints needed for sass-mq mixin
+ */
+
+$mq-breakpoints: $breakpoints !default;

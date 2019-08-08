@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #ICON-TEXT-ALIGNER-UTILITIES
+   ========================================================================== */
+
+.u-icon-textAligner {
+  display: flex;
+  align-items: center;
+
+  > *:nth-child(2) {
+    margin-left: var(--space-xxs);
+  }
+
+  .c-icon {
+    color: inherit;
+    flex-shrink: 0;
+  }
+}

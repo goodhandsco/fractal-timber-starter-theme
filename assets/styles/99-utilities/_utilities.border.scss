@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #BORDER-UTILITIES
+   ========================================================================== */
+.u-br-0 {
+  border-radius: 0 !important;
+}
+
+.u-br {
+  &--xs {
+    border-radius: var(--space-xs) !important;
+  }
+
+  &--sm {
+    border-radius: var(--space-sm) !important;
+  }
+
+  &--md {
+    border-radius: var(--space-md) !important;
+  }
+
+  &--lg {
+    border-radius: var(--space-lg) !important;
+  }
+
+  &--xl {
+    border-radius: var(--space-xl) !important;
+  }
+
+  &--xxl {
+    border-radius: var(--space-xxl) !important;
+  }
+
+  &--xxxl {
+    border-radius: var(--space-xxxl) !important;
+  }
+}

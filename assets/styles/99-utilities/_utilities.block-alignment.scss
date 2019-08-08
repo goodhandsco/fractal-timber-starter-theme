@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #BLOCK-ALIGNMENT-UTILITIES
+   ========================================================================== */
+[class*="u-ba"] {
+  display: inline-flex;
+}
+
+.u-ba-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.u-ba-xCenter {
+  justify-content: center;
+}
+
+.u-ba-xLeft {
+  justify-content: flex-start;
+}
+
+.u-ba-xRight {
+  justify-content: flex-end;
+}
+
+.u-ba-yCenter {
+  align-items: center;
+}
+
+.u-ba-yTop {
+  align-items: flex-start;
+}
+
+.u-ba-yBottom {
+  align-items: flex-end;
+}

@@ -1,0 +1,16 @@
+/* ==========================================================================
+   CSS-CUSTOM-PROPERTIES-VARIABLES
+   ========================================================================== */
+:root {
+  /* Buttons */
+  --btn-font-size: 1em;
+  --btn-sm: calc(var(--btn-font-size) - 0.2em);
+  --btn-md: calc(var(--btn-font-size) + 0.2em);
+  --btn-lg: calc(var(--btn-font-size) + 0.4em);
+
+  --btn-radius: var(--radius);
+  --btn-radius--xs: calc(var(--radius) - 0.4em);
+  --btn-radius--sm: calc(var(--radius) - 0.2em);
+  --btn-radius--lg: calc(var(--radius) + 0.2em);
+  --btn-radius--xl: calc(var(--radius) + 0.4em);
+}

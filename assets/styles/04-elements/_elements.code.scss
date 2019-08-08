@@ -1,0 +1,5 @@
+pre {
+  background: var(--color-light);
+  padding: 1.25em 2rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08), 0px 0px 4px rgba(0, 0, 0, 0.05); // TODO: Make box-shadow dynamic through function?
+}

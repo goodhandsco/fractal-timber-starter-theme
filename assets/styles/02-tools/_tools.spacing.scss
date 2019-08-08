@@ -1,0 +1,44 @@
+// 8pt Grid Spacing
+
+$zero: 0px;
+$half: 24px;
+$one: 48px;
+$two: 96px;
+$three: 144px;
+$four: 192px;
+$five: 240px;
+
+@mixin space(
+  $type: margin,
+  $direction: all,
+  $amount: $one,
+  $from: $bkp-tablet
+) {
+  @include mq($from: $from) {
+    @if $type == padding {
+      @if $direction == all {
+        padding: $amount;
+      } @else if $direction == top {
+        padding-top: $amount;
+      } @else if $direction == left {
+        padding-left: $amount;
+      } @else if $direction == right {
+        padding-right: $amount;
+      } @else {
+        padding-bottom: $amount;
+      }
+    } @else {
+      @if $direction == all {
+        margin: $amount;
+      } @else if $direction == top {
+        margin-top: $amount;
+      } @else if $direction == left {
+        margin-left: $amount;
+      } @else if $direction == right {
+        margin-right: $amount;
+      } @else {
+        margin-bottom: $amount;
+      }
+    }
+  }
+}

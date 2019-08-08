@@ -1,0 +1,90 @@
+/* ==========================================================================
+   #COLOR-VARIABLES
+   ========================================================================== */
+
+:root {
+  /* main colors */
+  --color-primary: #0600ff;
+  --color-primary-light: color-mod(
+    var(--color-primary) tint(15%)
+  ); // TODO: fix color-mod function
+  --color-primary-dark: color-mod(var(--color-primary) shade(15%));
+  --color-primary-bg: color-mod(var(--color-primary) alpha(20%));
+
+  --color-accent: #f8dc00;
+  --color-accent-light: color-mod(var(--color-accent) tint(15%));
+  --color-accent-dark: color-mod(var(--color-accent) shade(10%));
+  --color-accent-bg: color-mod(var(--color-accent) alpha(20%));
+
+  // shades - generated using chroma.js - 12 steps
+  --color-dark: #1d1d21;
+  --gray-10: #2e2e31;
+  --gray-6: #7b7a7d;
+  --gray-4: #a5a5a6;
+  --gray-3: #bbbbbc;
+  --gray-2: #d1d0d2;
+  --gray-1: #e8e7e8;
+  --color-light: white;
+
+  /* feedback */
+  --color-success: #88c459;
+  --color-error: #f5414f;
+  --color-warning: #ffd137;
+
+  /* typography */
+  --color-text: var(--gray-10);
+  --color-text-heading: var(--black);
+  --color-text-subtle: var(--gray-6);
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-light);
+  --color-link-visited: var(--color-primary-dark);
+  --color-mark: var(--color-accent-bg);
+  --color-blockquote-border: var(--gray-2);
+
+  /* border */
+  --color-border: var(--gray-2);
+
+  /* body */
+  --color-body: var(--color-light);
+
+  /* forms */
+  --form-element-border: var(--color-border);
+  --form-element-border-focus: var(--color-primary);
+  --form-element-border-error: var(--color-error);
+  --form-element-bg: var(--color-light);
+  --form-text-placeholder: var(--gray-4);
+
+  /* buttons */
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-hover: var(--color-primary-light);
+  --btn-primary-active: var(--color-primary-dark);
+  --btn-primary-label: var(--color-light);
+
+  --btn-secondary-bg: var(--gray-1);
+  --btn-secondary-active: var(--gray-2);
+  --btn-secondary-label: var(--gray-10);
+
+  --btn-accent-bg: var(--color-accent);
+  --btn-accent-hover: var(--color-accent-light);
+  --btn-accent-active: var(--color-accent-dark);
+  --btn-accent-label: var(--color-light);
+
+  --btn-disabled-bg: var(--gray-2);
+  --btn-disabled-label: var(--gray-10);
+
+  /* icons */
+  --color-icon-primary: var(--gray-4);
+  --color-icon-secondary: inherit;
+
+  @supports (--css: variables) {
+    .dark {
+      --color-dark: white;
+      --color-light: #1d1d21;
+    }
+  }
+}
+
+.dark {
+  --color-dark: white;
+  --color-light: #1d1d21;
+}

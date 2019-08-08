@@ -1,0 +1,26 @@
+// ITCSS structure
+// Original post by Harry Roberts
+// https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// 00. Libraries
+@import "00-libraries/_index";
+
+// 01. Settings
+@import "01-settings/_index";
+
+// 02.Tools
+@import "02-tools/_index";
+
+// 03. Generic
+@import "03-generic/_index";
+
+// 04. Elements
+@import "04-elements/_index";
+
+// 05. Objects
+@import "05-objects/_index";
+
+// 07. Components
+
+// 99. Utilities
+@import "99-utilities/_index";

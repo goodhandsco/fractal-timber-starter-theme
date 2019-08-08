@@ -1,4 +1,4 @@
-# Insticator WP Theme + Styleguide
+# GOOD HANDS WordPress Starter Theme
 
 To prepare everything check out the project and run:<br>
 `npm install`
