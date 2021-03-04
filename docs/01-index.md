@@ -1,8 +1,6 @@
 ---
-title: APA Intemporal Styleguide
+title: GOOD HANDS Styleguide
 ---
-
-This is a styleguide document for the new Insticator website and branding materials.
 
 The styleguide is integrated with the WordPress theme and all changes made to the elements on here will be reflected on the live site.
 

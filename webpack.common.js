@@ -44,7 +44,8 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              importer: globImporter()
+              importer: globImporter(),
+              implementation: require('sass'),t
             }
           }
         ]
@@ -92,10 +93,6 @@ module.exports = {
       {
         from: path.resolve(SRC_DIR, "images"),
         to: path.resolve(PUB_DIR, "images")
-      },
-      {
-        from: path.resolve(SRC_DIR, "videos"),
-        to: path.resolve(PUB_DIR, "videos")
       },
       {
         from: path.resolve(SRC_DIR, "vendor"),

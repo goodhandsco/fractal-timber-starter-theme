@@ -4,6 +4,6 @@
 		{% include 'icons/open-nav.svg' %}
 	</button>
 	<a href="{{ path('/') }}" class="Header-title" data-pjax>
-		<img src="/images/logo.svg" width="150"><span style="margin-left: 10px;color:#0E1F4A">styleguide</span>
+		<!--<img src="/images/logo.svg" width="150">--><span style="margin-left: 10px;color:#0E1F4A">Styleguide</span>
 	</a>
 </div>
