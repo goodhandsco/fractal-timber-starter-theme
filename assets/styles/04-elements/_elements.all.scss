@@ -14,3 +14,44 @@ html {
     box-sizing: inherit;
   }
 }
+
+.section {
+  padding: 20px 0;
+
+  @media (min-width: $lg) {
+    padding: 40px 0;
+  }
+}
+
+div.card-small {
+  box-shadow: -0.948454px -0.948454px 3.79381px rgba(255, 255, 255, 0.05), 1.89691px 1.89691px 3.79381px #1c2aa3;
+}
+
+div.card-large {
+  box-shadow: -0.948454px -0.948454px 40px rgba(255, 255, 255, 0.05), 1.89691px 1.89691px 40px rgba(28, 42, 174, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

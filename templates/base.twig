@@ -12,6 +12,10 @@
 
 			{% include 'header.twig' %}
 
+			{% if option.enable_usp_bar == '1' %}
+				{% include 'usp-bar.twig' %}
+			{% endif %}
+			
 			<section id="content" role="main" class="content-wrapper">
 				<div class="wrapper">
 					{% block content %}
@@ -23,13 +27,6 @@
 			{% block footer %}
 				{% include 'footer.twig' %}
 				{{ function('wp_footer') }}
-				<script>
-			    	AOS.init({
-				      offset: 200,
-				      duration: 600,
-				      easing: 'ease-in-sine',
-				    });
-			  	</script>
 			{% endblock %}
 
 		</div>

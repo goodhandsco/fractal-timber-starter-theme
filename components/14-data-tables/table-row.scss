@@ -1,0 +1,15 @@
+table {
+    border-bottom: 1px solid color(brand);
+    width: 350px;
+    position: relative;
+    display: inline-block;
+    tr {
+      @extend .body--XS;
+      display: inline-block;
+      align-items: center;
+      &.right {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }

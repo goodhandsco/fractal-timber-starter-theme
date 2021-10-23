@@ -50,3 +50,48 @@
 @if $enable-grid-classes {
   @include make-grid-columns();
 }
+
+// added code below //
+
+$gap-horizontal: 10px;
+$gap-vertical: $gap-horizontal;
+
+@mixin grid {
+   @supports (grid-area: auto) {
+      display: grid;
+      grid-column-gap: $gap-horizontal;
+      grid-row-gap: $gap-vertical;
+   }
+}
+
+.mobile-horizontal-grid {
+   display: grid;
+   margin: 16px;
+   width: auto;
+   column-count: 12;
+   column-gap: 16px;
+}
+
+.mobile-vertical-grid {
+   display: grid;
+   height: 8px;
+   offset: 0px;
+   column-gap: 8px;
+   top: auto;
+}
+
+.desktop-horizontal-grid {
+   display: grid;
+   margin: 80px;
+   width: auto;
+   column-count: 12;
+   column-gap: 16px;
+}
+
+.desktop-vertical-grid {
+   display: grid;
+   height: 8px;
+   column-gap: 8px;
+   offset: 0px;
+   top: auto;
+}

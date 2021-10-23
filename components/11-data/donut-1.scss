@@ -1,0 +1,42 @@
+/* DONUT */
+.donut {
+    display: block;
+    margin: auto;
+    &--label {
+      position: absolute;
+      text-align: center;
+      padding-left: 10em;
+      padding-top: 13em;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    &--text {
+      padding-top: 17em;
+      padding-left: 1em;
+    }
+    &.one {
+      width: 180px;
+      height: 90px;
+      border-top-left-radius: 100px; /* 100px of height + 10px of border */
+      border-top-right-radius: 100px; /* 100px of height + 10px of border */
+      border: 8px solid color(brand);
+      border-bottom: 0;
+    }
+    &.second {
+      width: 154px;
+      height: 77px;
+      border-top-left-radius: 87px; /* 100px of height + 10px of border */
+      border-top-right-radius: 87px; /* 100px of height + 10px of border */
+      border: 8px solid color(brand);
+      border-bottom: 0;
+    }
+    &.third {
+      width: 130px;
+      height: 65px;
+      border-top-left-radius: 75px; /* 100px of height + 10px of border */
+      border-top-right-radius: 75px; /* 100px of height + 10px of border */
+      border: 8px solid color(brand);
+      border-bottom: 0;
+    }
+  }
+  /* DONUT */

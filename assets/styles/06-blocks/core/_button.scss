@@ -7,21 +7,63 @@
 ////
 
 .wp-block-button {
-  margin-bottom: 1.5em;
+  $self: &;
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
 
   &__link {
-    border: none;
-    border-radius: 0;
+    border-radius: 5px;
     box-shadow: none;
     cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: em(20px, 14px);
+    line-height: 1;
     margin: 0;
-    padding: 11px 24px;
+    padding: 8px 20px;
     text-align: center;
     text-decoration: none;
     white-space: normal;
-    word-break: break-all;
+    word-break: break-word;
+    font-family: 'Helvetica Now Display';
+    font-weight: 500;
+    transition: 0.3s;
+
+    @include mq($from: tablet) {
+      padding: 14px 20px;
+    }
+  }
+
+  &.is-style-fill {
+    #{ $self }__link {
+      color: color(color-white);
+      background: color(brand);
+      border: 1px solid transparent;
+
+      @include onEvent {
+        color: color(color-white);
+        background: color(brand-dark);
+        border: 1px solid color(brand-dark);
+      }
+    }
+  }
+
+  &.is-style-outline {
+    #{ $self }__link {
+      background: color(color-white);
+      border: 1px solid color(brand-dark);
+      color: color(brand-dark);
+
+      @include onEvent {
+        color: color(color-white);
+        background: color(brand);
+        border: 1px solid color(brand);
+      }
+    }
   }
 }

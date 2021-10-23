@@ -1,0 +1,43 @@
+/* TABS */
+.tabs {
+    width: 304px;
+    height: 36px;
+    label {
+      @extend h6 ;
+    }
+    &--border {
+      min-width: 304px;
+      padding: 1rem;
+      padding-top: 5em;
+      position: relative;
+      background: linear-gradient(to right, #3049a0 30%, #a2abfa 0%);
+      padding: 4px;
+    }
+    input {
+      display: none;
+    }
+    input + label {
+      display: inline-block;
+    }
+    input ~ .tab {
+      display: none;
+    }
+  
+    #tab1:checked ~ .tab.content1,
+    #tab2:checked ~ .tab.content2,
+    #tab3:checked ~ .tab.content3 {
+      display: block;
+    }
+  
+    input + label {
+      border-radius: 0;
+      position: relative;
+      top: 1px;
+      margin-left: 20px;
+      margin-right: 30px;
+    }
+    input ~ .tab {
+      padding: 5em;
+    }
+  }
+  /* TABS */

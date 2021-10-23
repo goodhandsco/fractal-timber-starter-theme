@@ -1,0 +1,19 @@
+.woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
+    display: none !important;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: color(brand);
+  
+    &:hover {
+      background-color: color(brand-dark);
+    }
+  }
+
+  .woocommerce a.remove {
+    color: color(brand) !important;
+
+    &:hover {
+      background: color(brand) !important;
+    }
+  }

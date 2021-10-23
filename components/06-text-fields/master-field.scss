@@ -1,0 +1,24 @@
+input {
+    color: color(brand);
+    font-family: $primaryFont;
+    border-color: color(brand);
+    border-radius: 5px;
+    width: 328px;
+    height: 56px;
+  }
+  
+  ::placeholder {
+    @extend .body--S;
+    color: color(brand);
+    opacity: 1;
+    font-family: $primaryFont;
+  }
+  *:focus::-webkit-input-placeholder {
+    opacity: 0;
+  } /* Chrome <=56, Safari < 10 */
+  *:focus::-moz-placeholder {
+    opacity: 0;
+  } /* FF 19-50 */
+  *:focus::placeholder {
+    opacity: 0;
+  } /* Modern Browsers */

@@ -3,3 +3,16 @@ ul {
 
 li {
 }
+
+.list1 {
+    font-size: 16px;
+    line-height: 1.24;
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-style: normal;
+    &.text {
+      position: absolute;
+      padding-left: 10;
+      padding-top: 1%;
+    }
+  }

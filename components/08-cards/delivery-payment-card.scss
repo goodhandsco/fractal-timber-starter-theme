@@ -1,0 +1,25 @@
+.delivery-payment {
+    border: 1px solid color(neutral1);
+    width: 328px;
+    min-height: 157px;
+    &--title {
+      position: absolute;
+      left: 72px;
+      top: 24.12px;
+      width: 296px;
+      height: 40px;
+    }
+    &--edit {
+      position: absolute;
+      right: 20px;
+      top: 24.12px;
+      left: 280px;
+    }
+    &--info {
+      position: absolute;
+      width: 207px;
+      height: 64px;
+      left: 72px;
+      top: 68px;
+    }
+  }

@@ -17,6 +17,14 @@
 // Individual columns.
 .wp-block-column {
   flex: 1;
+
+  @media (max-width: $lg) {
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    margin: 0 0 1em 0;
+  }
 }
 
 // Editor specific styling. Make sure columns span correctly.

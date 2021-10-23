@@ -1,14 +1,35 @@
-p,
-span {
+html,
+body {
+  font-size: $basepx;
+  font-family: $primaryFont;
+  color: color(brand);
 }
 
 p {
+  font-family: $primaryFont;
+  color: color(brand);
+}
+
+p,
+span {
+  max-width: 100%;
+}
+
+p {
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
 }
 
 /*
  * Small
  */
 small {
+  font-size: em(13px, $basepx);
+
+  @media (min-width: $md) {
+    font-size: em(16px, $basepx);
+  }
 }
 
 /*
@@ -23,4 +44,89 @@ em,
 i,
 cite {
   font-style: italic;
+}
+
+.text {
+  &--large {
+    font-size: em(18px, $basepx);
+
+    @media (min-width: $md) {
+      font-size: em(20px, $basepx);
+    }
+  }
+
+  &--medium {
+    font-size: em(14px, $basepx);
+
+    @media (min-width: $md) {
+      font-size: em(15px, $basepx);
+    }
+  }
+
+  &--small {
+    font-size: em(12px, $basepx);
+    line-height: 1.15;
+
+    @media (min-width: $md) {
+      font-size: em(13px, $basepx);
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+a {
+  color: color(brand);
+  display: block;
+  position: relative;
+}
+
+.link {
+  &--mobile-menu {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 2;
+    font-weight: 700;
+    font-family: $primaryFont;
+  }
+  &--bold-L {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.24;
+    font-weight: 700;
+    font-family: $primaryFont;
+  }
+  &--bold-S {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: $primaryFont;
+  }
+}
+.body {
+  &--L {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $primaryFont;
+  }
+
+  &--S {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: $primaryFont;
+  }
+
+  &--XS {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.24;
+    font-weight: 400;
+    font-family: $primaryFont;
+  }
 }

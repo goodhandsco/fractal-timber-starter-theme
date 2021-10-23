@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            {% include 'knowledge-center-menu.twig' %}
+        </div>
+        <div class="col-12 col-md-8 pl-md-5">
+            {{ post.content }}
+        </div>
+    </div>
+</div>
+{% endblock %}

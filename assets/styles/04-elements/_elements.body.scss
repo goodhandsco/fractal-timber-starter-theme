@@ -1,53 +1,21 @@
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   margin: 0;
 
-  &:not(.wp-admin) {
-    .site-content {
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.25s ease-in-out;
-    }
+  &.noscroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-    &.loaded {
-      .site-content {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
+  &:not(.wp-admin) {
 
     &.customize-support {
-      margin-top: -32px;
-
       #wpadminbar {
-        top: -27px;
-        opacity: 0.2;
-        overflow: hidden;
-        @include basicTransition(0.3s ease-in-out);
-
-        &:hover {
-          top: 0;
-          opacity: 1;
-        }
-      }
-      @media screen and (max-width: 782px) {
-        margin-top: -46px;
-
-        #wpadminbar {
-          top: -41px;
-        }
+        display: none;
       }
     }
   }
-}
-
-p,
-span {
-  max-width: 100%;
 }

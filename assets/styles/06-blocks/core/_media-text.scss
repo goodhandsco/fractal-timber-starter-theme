@@ -8,8 +8,8 @@
 
 .wp-block-media-text {
   display: grid;
-  grid-template-rows: auto;
   align-items: center;
+  grid-template-rows: auto;
   grid-template-areas: "media-text-media media-text-content";
   grid-template-columns: 50% auto;
 
@@ -24,20 +24,20 @@
   }
 
   &__content {
-    word-break: break-word;
     grid-area: media-text-content;
+    word-break: break-word;
     padding: 0 8%;
   }
 
   > figure > img,
   > figure > video {
     max-width: unset;
-    width: 100%;
     vertical-align: middle;
+    width: 100%;
   }
 }
 
-@media (max-width: break( "small" )) {
+@media (max-width: break("small")) {
   .wp-block-media-text.is-stacked-on-mobile {
     grid-template-columns: 100% !important; // Overwrite core's inline style.
     grid-template-areas:

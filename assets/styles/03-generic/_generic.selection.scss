@@ -1,11 +1,11 @@
 ::selection {
-  color: $color-white;
-  background: $color-ips-black;
+  color: color(color-white);
+  background: color(brand);
 }
 
 ::-moz-selection {
-  color: $color-white;
-  background: $color-ips-black;
+  color: color(color-white);
+  background: color(brand);
 }
 
 * {

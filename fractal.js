@@ -33,7 +33,7 @@ fractal.web.theme(customisedTheme);
 /*
  * Give your project a title.
  */
-fractal.set("project.title", "Insticator Styleguide");
+fractal.set("project.title", "Insticator Helumium");
 
 /*
  * Tell Fractal where to look for components.

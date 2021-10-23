@@ -1,0 +1,8 @@
+///* ========================================================================
+//   #FONT-EM-MIXIN
+//   ======================================================================== */
+// enables conversion from px to em values
+@function em($target, $context: $basepx) {
+    @if $target == 0 { @return 0 }
+    @return $target / $context + 0em;
+ }

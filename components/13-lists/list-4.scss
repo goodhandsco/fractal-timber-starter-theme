@@ -1,0 +1,13 @@
+.list4 {
+    display: block;
+    flex-flow: column wrap;
+    &--icons {
+      position: absolute;
+    }
+    p {
+      position: absolute;
+      padding-top: 0.5em;
+      padding-left: 3em;
+      line-height: 22px;
+    }
+  }

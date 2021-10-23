@@ -1,7 +1,7 @@
 ---
-title: GOOD HANDS Styleguide
+title: Fractal Webpack Boilerplate
 ---
 
-The styleguide is integrated with the WordPress theme and all changes made to the elements on here will be reflected on the live site.
+This is your index page. You can edit its contents at `docs/01-index.hbs`
 
-All of the text content on this styleguide is dummy, however, the actual site is pulling in actual dynamic data from WordPress, ACF and other relevant plugins.
+<h1>This is a test</h1>

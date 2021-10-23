@@ -58,11 +58,11 @@
     max-height: 100%;
     padding: 40px 10px 5px;
     text-align: center;
-    color: color(white);
+    color: color(color-white);
     background: linear-gradient(
       0deg,
-      rgba(color(black), 0.7) 0,
-      rgba(color(black), 0.3) 60%,
+      rgba(color(brand), 0.7) 0,
+      rgba(color(brand), 0.3) 60%,
       transparent
     );
 

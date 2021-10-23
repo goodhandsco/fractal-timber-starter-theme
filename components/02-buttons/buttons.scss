@@ -1,0 +1,33 @@
+button {
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  &.main {
+    background-color: color(brand);
+    font-weight: bold;
+    font-family: $primaryFont;
+    color: color(neutral1);
+    border: 0px;
+  }
+  &.ghost {
+    background-color: transparent;
+    font-family: $primaryFont;
+    color: color(brand);
+    border: 1px solid color("brand");
+    border-radius: 4px;
+    min-width: 64px;
+    &--small {
+      @extend .ghost;
+      width: 80px;
+      height: 40px;
+      font-weight: lighter;
+      font-size: small;
+    }
+    &--3 {
+      background: color(neutral1);
+      border: 0px;
+      width: 92px;
+      height: 56px;
+    }
+  }
+}

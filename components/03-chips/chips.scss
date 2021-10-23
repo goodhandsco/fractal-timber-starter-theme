@@ -1,0 +1,21 @@
+.chip {
+    &--main {
+      width: 100px;
+      height: 40px;
+      background-color: color(neutral1);
+      color: color(brand);
+      font-size: small;
+      border-radius: 100px;
+      padding: 0;
+      border: none;
+    }
+    &--alt {
+      width: 72px;
+      height: 48px;
+      background-color: transparent;
+      border: 3px solid color("brand");
+      color: color(brand);
+      font-weight: bold;
+      border-radius: 2px;
+    }
+  }

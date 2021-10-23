@@ -32,4 +32,37 @@
 
   figcaption {
   }
+
+  &.alignfull {
+    width: 100%;
+    margin: 0;
+
+    @media (min-width: $md) {
+      padding: 0 20px;
+    }
+ 
+    img {
+      max-height: 145px;
+      object-fit: cover;
+
+      @media (min-width: $md) {
+        border-radius: 10px;
+        max-height: 450px;
+      }
+    }
+  }
+
+  &.alignwide {
+    @extend .container;
+
+    img {
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+
+      @media (min-width: $md) {
+        max-height: 600px;
+      }
+    }
+  }
 }

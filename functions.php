@@ -27,6 +27,11 @@ if ( ! class_exists( 'Timber' ) ) {
 Timber::$dirname = array( 
 	'templates', 
 	'components',
+	'components/_icons',
+	'component/_buttons',
+	'component/_chips',
+	'component/_bottom-navigation',
+	'component/_selection-controls',
 );
 
 /**

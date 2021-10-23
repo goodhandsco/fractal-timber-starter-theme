@@ -1,0 +1,19 @@
+.list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    &--main {
+      width: 424px;
+      height: 328px;
+    }
+    p {
+      padding-left: 1em;
+    }
+    &--lightercolor {
+      color: color(secondary);
+    }
+    p.list3 {
+      padding-left: 0em;
+    }
+  }

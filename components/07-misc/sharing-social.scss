@@ -1,0 +1,19 @@
+.share-social {
+    text-align: center;
+    border: 1px solid color(neutral1);
+    box-sizing: border-box;
+    max-width: 328px;
+    min-height: 132px;
+    span {
+      margin-top: 7%;
+    }
+    &--text {
+      margin-top: 7%;
+    }
+    #circle-list1 {
+      margin-right: 10%;
+    }
+    #circle-list3 {
+      margin-left: 10%;
+    }
+  }

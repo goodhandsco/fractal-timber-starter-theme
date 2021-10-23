@@ -1,0 +1,21 @@
+.fixed-bottom-menu {
+    height: 64px;
+    width: 360px;
+    padding-top: 2%;
+    background-color: color(neutral2);
+    color: color(brand);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  .item {
+    flex-grow: 1;
+    flex-basis: auto;
+    align-self: baseline;
+    text-align: center;
+    a {
+      padding-top: 10%;
+    }
+  }

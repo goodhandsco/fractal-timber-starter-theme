@@ -1,0 +1,21 @@
+.search {
+  width: 524px;
+  margin-top: 2%;
+  margin-left: 2%;
+  input[type="text"]::placeholder {
+    padding-left: 5%;
+  }
+}
+
+#search-bar {
+  width: 100%;
+    background: color(neutral1);
+    border: 0px;
+    border-radius: 4px;
+  }
+  
+  #search-icon {
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }

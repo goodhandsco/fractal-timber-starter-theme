@@ -1,0 +1,17 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    {% include 'pdp-header.twig' %}
+	{{ post.content }}
+    <div class="product-overview__sticky-bar">
+		<div class="container">
+			<div class="product-overview__cta wp-block-button is-style-fill">
+				<a href="#" class="wp-block-button__link">Design Your Tub</a>
+			</div>
+
+			<div class="product-overview__cta wp-block-button is-style-outline">
+				<a href="{{ parent_link }}#specials" class="wp-block-button__link">Shop from stock</a>
+			</div>
+		</div>	
+	</div>
+{% endblock %}

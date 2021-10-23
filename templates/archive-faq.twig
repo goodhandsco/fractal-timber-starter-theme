@@ -1,0 +1,60 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                {% include 'knowledge-center-menu.twig' %}
+            </div>
+            <div class="col-12 col-md-8 pl-md-5">
+                <div class="container">
+                    <!--<div class="row">
+                        {% filter shortcodes %}
+                            [facetwp facet="search"]
+                        {% endfilter %}
+                    </div>-->
+                    <div class="row section-faq facetwp-template">
+                        {% for term in terms %}
+                            <h2 class="mb-3">{{ term.title }}</h2>
+                            {% for post in term.posts %}
+                                <div class="section-faq__question{% if loop.last %} mb-5{% else %} mb-2{% endif %}">
+                                    <button aria-label="Expand question" class="section-faq__question__title">
+                                        {{ post.title }}
+                                    </button>
+
+                                    <div class="section-faq__question__content-container">
+                                        <div class="section-faq__question__content">
+                                            {{ post.content }}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+
+    {% if posts %}
+    <script type="application/ld+json">{
+        "@context":"https://schema.org/",
+        "@type":"FAQPage",
+        "mainEntity":[
+        {% for post in posts %}
+        {
+            "@type":"Question",
+            "name":"{{ post.title }}",
+            "acceptedAnswer":{
+                "@type":"Answer",
+                "text":"{{ post.content }}"
+            }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+        ]
+    }</script>
+    {% endif %}
+{% endblock %}

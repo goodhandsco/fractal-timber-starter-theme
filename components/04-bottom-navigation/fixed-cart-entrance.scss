@@ -1,0 +1,96 @@
+.fixed-cart-entrance {
+    margin-top: 2%;
+    margin-left: 3%;
+    position: relative;
+    height: 188px;
+    width: 360px;
+    border: 1px solid color(neutral1);
+
+    &.price {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 65%;
+        flex-direction: row;
+        p {
+            display: inline-block;
+            margin: 11px;
+            flex: 1;
+        }
+    }
+
+    &.choices {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 50%;
+    }
+    button {
+        width: 336px;
+        margin: 1%;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+}
+
+hr {
+    border: 1px solid color(neutral1);
+    width: 360px;
+    height: 1px;
+    margin: 0%;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 1em;
+    font-size: 12px;
+    padding-left: 3%;
+    white-space: nowrap;
+    padding-top: 3%;
+    p {
+        text-align: center;
+        margin: 1%;
+        padding-right: 15%;
+        margin-top: 2%;
+    }
+}
+
+.checkbox__input {
+    input {
+        opacity: 0;
+        width: 1em;
+        height: 1em;
+    }
+    display: grid;
+    grid-template-areas: "checkbox";
+
+    > * {
+        grid-area: checkbox;
+    }
+}
+.checkbox__input input:checked + .checkbox__control svg {
+    transform: scale(1);
+}
+.checkbox__control {
+    display: inline-grid;
+    width: 24px;
+    height: 24px;
+    border-radius: 5em;
+    border: 0.1em solid currentColor;
+    color: white;
+    background: color(brand);
+}
+
+.checkbox__control svg {
+    transition: transform 0.1s ease-in 25ms;
+    transform: scale(0);
+    transform-origin: bottom left;
+    width: 18px;
+    height: 19px;
+}

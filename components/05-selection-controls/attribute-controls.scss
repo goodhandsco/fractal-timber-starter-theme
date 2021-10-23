@@ -1,0 +1,35 @@
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: color(secondary);
+    border-radius: 50%;
+    display: inline-block;
+    &--2 {
+      @extend .circle;
+      background-color: color(tertiary);
+    }
+    &--3 {
+      @extend .circle;
+      background-color: color(neutral1);
+    }
+    &--4 {
+      @extend .circle;
+      background-color: #ffffff;
+      border: 3px solid color(brand);
+    }
+    &--5 {
+      @extend .circle;
+      background-color: color(neutral1);
+    }
+    &--6 {
+      @extend .circle;
+      background-color: color(tertiary);
+    }
+    &--7 {
+      @extend .circle;
+      background-color: color(brand);
+      left: 16px;
+      top: 24px;
+      position: absolute;
+    }
+  }

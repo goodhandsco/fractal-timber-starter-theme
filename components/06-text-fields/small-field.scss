@@ -1,0 +1,26 @@
+.sm-field {
+    margin-left: 3%;
+    margin-top: 1%;
+    #one {
+        width: 64px;
+        height: 56px;
+        span {
+            padding-right: 25%;
+        }
+    }
+    #two {
+        width: 92px;
+        height: 56px;
+        background: color(neutral1);
+        border: 0;
+        margin-left: 2%;
+        span {
+            padding-right: 25%;
+        }
+    }
+
+    div {
+        display: inline;
+        vertical-align: middle;
+    }
+}

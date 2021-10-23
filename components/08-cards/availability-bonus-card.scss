@@ -1,0 +1,24 @@
+.av-bonus-card {
+    max-width: 328px;
+    max-height: 88px;
+    border: 1px solid color(neutral1);
+    box-sizing: border-box;
+    display: flex;
+    width: 33.33%;
+    &--left {
+      flex: 1;
+      margin: 10px;
+      white-space: nowrap;
+    }
+    &--right {
+      flex: 1;
+      margin: 10px;
+      white-space: nowrap;
+    }
+    &--bar {
+      border: 1px solid color(neutral1);
+      transform: rotate(-90deg);
+      width: 48px;
+      margin: auto;
+    }
+  }

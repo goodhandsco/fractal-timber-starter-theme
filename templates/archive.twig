@@ -2,11 +2,28 @@
 
 {% block content %}
 
-	<section class="blog">
-		<div class="container-fluid">
+	<section class="latest-articles">
+		<div class="container">
 			<div class="row">
 				{% for post in posts %}
-					Post
+					<a href="{{ post.link }}" class="col-12 col-md-6{% if not loop.last %} mb-5 mb-md-0{% endif %}">
+						{% if post.img %}
+							<img class="mb-4" src="{{ post.img }}" alt="{{ post.title  }}">
+						{% else %}
+							{{ fn('get_the_post_thumbnail', post.ID, 'latest-articles') }}
+						{% endif %}
+						<h3 class="mt-4 mb-2">{{ post.title }}</h3>
+						{% if post.excerpt %}
+							<p class="mb-3 pr-lg-5">{{ post.excerpt }}</p>
+						{% else %}
+							<p class="mb-3 pr-lg-5">{{ post.preview.length(40).read_more('') }}</p>
+						{% endif %}
+						{% if post.published %}
+							<time class="text--medium">{{ post.published }}</time>
+						{% else %}
+							<time class="text--medium" datetime="{{ post.date('c') }}" itemprop="datePublished">{{ post.date('F j, Y') }}</time>
+						{% endif %}
+					</a>
 				{% endfor %}
 			</div>
 		</div>

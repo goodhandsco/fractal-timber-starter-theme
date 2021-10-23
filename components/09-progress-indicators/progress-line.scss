@@ -1,0 +1,23 @@
+/* Progress bar*/
+.prog-bar {
+    box-sizing: content-box;
+    height: 10px; /* Can be anything */
+    width: 328px;
+    position: relative;
+    margin: 30px 0px 20px 20px; /* Just for demo spacing */
+    background: color(neutral1);
+    border-radius: 18px;
+    padding: 0px;
+  }
+  .prog-bar > span {
+    display: block;
+    height: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: (color(brand));
+    position: relative;
+    overflow: hidden;
+  }
+  /* Progress bar */

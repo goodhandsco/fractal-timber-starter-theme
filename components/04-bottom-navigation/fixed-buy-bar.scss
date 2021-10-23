@@ -1,0 +1,38 @@
+.fixed-buy-bar {
+  display: inline-block;
+  justify-content: space-around;
+  margin: 1%;
+  button {
+    min-width: 64px;
+    min-height: 56px;
+    &.wish-btn {
+      min-width: 92px;
+    }
+    &.qty-btn {
+      min-width: 114px;
+    }
+    &.add-btn {
+      min-width: 232px;
+      padding-top: 3%;
+      margin-inline: 3%;
+      
+      &--2 {
+        width: 128px;
+        padding-top: 3%;
+        margin-inline: 4%;
+      }
+    }
+  }
+  #first {
+    display: inline-block;
+    justify-content: space-around;
+    width: 360px;
+    height: 80px;
+  }
+  #second {
+    display: inline-block;
+    justify-content: space-around;
+    width: 360px;
+    height: 80px;
+  }
+}

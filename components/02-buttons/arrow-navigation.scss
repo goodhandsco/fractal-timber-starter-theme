@@ -1,0 +1,16 @@
+.arrow-button {
+    border: none;
+    width: 64px;
+    height: 64px;
+    background: color("tertiary");
+    border-radius: 50%;
+    transform: rotate(180deg);
+    &--avatar {
+      @extend h5;
+      border: none;
+      width: 96px;
+      height: 96px;
+      background: color("tertiary");
+      border-radius: 50%;
+    }
+  }

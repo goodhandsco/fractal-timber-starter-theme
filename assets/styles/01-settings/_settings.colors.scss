@@ -1,6 +1,27 @@
 /* ==========================================================================
-   #COLOR-VARIABLES
-   ========================================================================== */
+#COLOR-VARIABLES
+========================================================================== */
 
-$color-ips-black: #232323;
-$color-white: #fff;
+$colors: ("brand": #3049A0,
+"secondary": #4C57BB,
+"tertiary": #7A87F4,
+"neutral1": #A2ABFA,
+"neutral2": #FFFFFF);
+
+@function color($color) {
+   @return map-get($colors, $color);
+}
+
+/* Color Options
+--------------------------------------------- */
+
+@each $name, $color in $colors {
+
+   .has-#{$name}-color {
+      color: $color;
+   }
+
+   .has-#{$name}-background-color {
+      background-color: $color;
+   }
+}

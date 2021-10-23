@@ -4,4 +4,4 @@ context:
       values:
         white: "#fff"
         black: "#000"
-    
+        Primary: "#3049A0"

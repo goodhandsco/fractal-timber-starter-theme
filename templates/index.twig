@@ -1,16 +1,45 @@
 {% extends "base.twig" %}
 
-{% block content %}	
+{% block content %}
 
-	<section class="blog">
-		<div class="container-fluid">
+	{% include 'blog-header.twig' %}
+
+	<section class="latest-articles" id="articles">
+		<div class="container">
 			<div class="row">
 				{% for post in posts %}
-					Post
+					<a href="{{ post.link }}" class="col-12 col-md-6{% if not loop.last %} mb-5{% endif %}" itemscope itemtype="https://schema.org/Article">
+						{% if post.img %}
+							<img class="mb-4" src="{{ post.img }}" alt="{{ post.title  }}">
+						{% else %}
+							{{ fn('get_the_post_thumbnail', post.ID, 'latest-articles') }}
+						{% endif %}
+						<h3 class="mt-4 mb-2" itemprop="name">{{ post.title }}</h3>
+						{% if post.excerpt %}
+							<p class="mb-3 pr-lg-5">{{ post.excerpt }}</p>
+						{% else %}
+							<p class="mb-3 pr-lg-5" itemprop="description">{{ post.preview.length(40).read_more('') }}</p>
+						{% endif %}
+						{% if post.published %}
+							<time class="text--medium">{{ post.published }}</time>
+						{% else %}
+							<time class="text--medium" datetime="{{ post.date('c') }}" itemprop="datePublished">{{ post.date('F j, Y') }}</time>
+						{% endif %}
+					</a>
 				{% endfor %}
 			</div>
+			{% if posts.pagination.next %}
+				<div class="row load-more-button-wrapper">
+					<div class="col-12">
+						<div class="d-flex justify-content-center wp-block-buttons">
+							<div class="wp-block-button is-style-fill my-5">
+								<a class="wp-block-button__link" id="load-older-posts" href="{{ posts.pagination.next.link }}">Load More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
 		</div>
 	</section>
 
-	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
 {% endblock %}

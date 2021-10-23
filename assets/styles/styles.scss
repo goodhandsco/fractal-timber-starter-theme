@@ -3,7 +3,7 @@
 // https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
 
 // 00. Libraries
-@import "00-libraries/_index";
+@import "00-libraries/_index.scss";
 
 // 01. Settings
 @import "01-settings/_index";
@@ -20,7 +20,21 @@
 // 05. Objects
 @import "05-objects/_index";
 
-// 07. Components
+// 06. Blocks
+@import "06-blocks/_index";
 
 // 99. Utilities
 @import "99-utilities/_index";
+
+@import "../../components/**/*.scss";
+
+.container {
+  @media screen and (max-width: $md) {
+    padding-left: em(20px);
+    padding-right: em(20px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
